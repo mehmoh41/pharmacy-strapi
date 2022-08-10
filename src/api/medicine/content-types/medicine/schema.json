@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medicines",
+  "info": {
+    "singularName": "medicine",
+    "pluralName": "medicines",
+    "displayName": "Medicine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "medicine_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "in_stock": {
+      "type": "decimal"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "medicine_name"
+    },
+    "expiration_date": {
+      "type": "date",
+      "required": true
+    },
+    "coming_price": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales",
+  "info": {
+    "singularName": "sale",
+    "pluralName": "sales",
+    "displayName": "Sale",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "medicine_name": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "string",
+      "required": true
+    },
+    "prices": {
+      "type": "string",
+      "required": true
+    },
+    "total": {
+      "type": "decimal",
+      "required": true
+    },
+    "coming_prices": {
+      "type": "string",
+      "required": true
+    },
+    "sale_date": {
+      "type": "date",
+      "default": "2022-07-21",
+      "required": true
+    },
+    "coming_total": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}
